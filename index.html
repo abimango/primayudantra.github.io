@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prima Yudantra</title>
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Draco is free PSD &amp; HTML template by @flamekaizar">
+    <meta name="author" content="Afnizar Nur Ghifari">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/* Edit this with your name or anything else */
+			content: 'PRIMA';
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">Prima Yudantra</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#experiences">Experiences</a></li>
+				        <li><a href="#portfolio">Portfolio</a></li>
+				        <li><a href="#skills">Skills</a></li>
+					<li><a href="http://primayudantra.wordpress.com">Blog</a>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m Prima Yudantra</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/ava.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>I live in<br><span id="typed"></span></h1>					
+				</div>
+				<p>
+					I’m a freelance front-end developer and I'm college student at Bina Nusantara University majoring in computer science with minor in Database System, I aim to write the most beautiful code possible.
+				</p>				
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Work<br>Experiences</h1>
+			<ul class="work-list">
+				<li>March 2015 - Present</li>
+				<li><a href="http://www.wavooapp.com">Wavoo App</a></li>
+				<li>Web Developer</li>
+			</ul>
+			<ul class="work-list">
+				<li>November 2014 - Present</li>
+				<li><a href="http://www.myparallax.com">Parallax</a></li>
+				<li>IT Division</li>
+			</ul>
+			<ul class="work-list">
+				<li>June 2014 - August 2014</li>
+				<li><a href="http://www.qasico.com">PT Qasico Teknologi Indonesia</a></li>
+				<li>Front End Developer</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<!-- Portfolio-->
+	<div class="work section second" id="portfolio">
+		<div class="container">
+			<h1>Portfolio</h1>
+			<ul class="work-list">
+				<li><a href="http://www.myparallax.com">PARALLAX</a></li>
+				<li>I analyzed data and content for myparallax.com that includes database and code for that website.</li>
+				<li><a href="http://www.ilyakuche.com">ILYA KUCHE</a></li>
+				<li>I optimized HTML, CSS & Javascript and I analyzed data and content for ILYAKUCHE.</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+			<ul class="skill-list list-flat">
+				<li>Web Technology</li>
+				<li>HTML / CSS / JAVASCRIPT / PHP / MySQL</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Framework</li>
+				<li>Bootstrap / Kube</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Other</li>
+				<li>Drumming / Video Editing / Sound Editing</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Quote -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>Things do not happen. Things are made to happen.</h1>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<!-- KOSONG -->
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:prima.yudantra@gmail.com"><i class="fa fa-send"></i></a></li>
+						<li><a href="http://facebook.com/primayudantra"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="http://id.linkedin.com/in/primayudantra/en"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["your heart","your mind", "your galaxy", "everywhere"],
+
+		typeSpeed:150,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
