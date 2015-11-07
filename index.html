@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="stylesheet" href="css/loading.css" />
     <link rel="shortcut icon" href="img/favicon.png" />
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -21,6 +22,7 @@
 	</style>
 </head>
 <body>
+<div id="page">
 	<!-- Navigation -->
 	<div class="main-nav">
 		<div class="container">
@@ -34,7 +36,7 @@
 				        <li><a href="#experiences">Experiences</a></li>
 				        <li><a href="#portfolio">Portfolio</a></li>
 				        <li><a href="#skills">Skills</a></li>
-					<li><a href="http://primayudantra.wordpress.com">Blog</a>
+					<li><a href="http://primayudantra.wordpress.com">Blog</a></li>
 				    </ul>
 				</nav>
 			</header>
@@ -64,14 +66,19 @@
 		<div class="container">
 			<h1>Work<br>Experiences</h1>
 			<ul class="work-list">
-				<li>March 2015 - Present</li>
+				<li>July 2015 - Present</li>
+				<li><a href="http://www.setipe.com">SETIPE.COM</a></li>
+				<li>Web Developer</li>
+			</ul>
+			<ul class="work-list">
+				<li>March 2015 - July 2015</li>
 				<li><a href="http://www.wavooapp.com">Wavoo App</a></li>
 				<li>Web Developer</li>
 			</ul>
 			<ul class="work-list">
 				<li>November 2014 - Present</li>
 				<li><a href="http://www.myparallax.com">Parallax</a></li>
-				<li>IT Division</li>
+				<li>Contributor/Blogger</li>
 			</ul>
 			<ul class="work-list">
 				<li>June 2014 - August 2014</li>
@@ -138,7 +145,27 @@
 			</div>
 		</div>
 	</footer>
+</div> <!-- #page -->
+<div id="loading"></div>
+	<script>
+	function onReady(callback) {
+    	var intervalID = window.setInterval(checkReady, 4000);
+	    function checkReady() {
+	        if (document.getElementsByTagName('body')[0] !== undefined) {
+	            window.clearInterval(intervalID);
+	            callback.call(this);
+	        }
+	    }
+	}
 
+	function show(id, value) {
+		document.getElementById(id).style.display = value ? 'block' : 'none';
+	}
+	onReady(function () {
+	    show('page', true);
+	    show('loading', false);
+	});
+	</script>
 	<!-- Javascript -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/typed.min.js"></script>
