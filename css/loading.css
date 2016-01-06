@@ -25,7 +25,8 @@ p {
     width: 100vw;
     height: 100vh;
     background-color: #FFF;
-    background-image: url("../img/loading.gif");
+    background-image: url("../img/sun.gif");
+    /*background-size: 1200px 40px;*/
     background-repeat: no-repeat;
     background-position: center;
 }
